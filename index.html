@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/doodle/96/000000/calculator--v1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel='stylesheet' href='dist/style.css'>
+    
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>Калькулятор</h2>
+            </div>
+            <div class="input-field col s12 m6 offset-m3">
+                <input id="numOne" type="text" class="validate" placeholder="Введи первое число">
+            </div>
+            <div class="input-field col s12 m6 offset-m3">
+                <input id="numTwo" type="text" class="validate" placeholder="Введи второе число">
+            </div>
+            <div class="input-field col s12 m6 offset-m3">
+                <button class="waves-effect waves-light btn-small" id="BtnPlus">+</button>
+                <button class="waves-effect waves-light btn-small" id="BtnMinus">-</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card input-field col s12 m6 offset-m3">
+          <div class="card-content">
+            <div id="output" class="card-title"></div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

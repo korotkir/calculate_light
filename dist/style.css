@@ -1,0 +1,17 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  margin-top: 20vh;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.input-field {
+  width: 30vw;
+}
+
+.card-panel {
+  margin-top: 10vh;
+}
