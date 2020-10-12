@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const num1 = document.querySelector('#num1')
 	const num2 = document.querySelector('#num2')
-	const BtnPlus = document.querySelector('#BtnPlus')
-	const BtnMinus = document.querySelector('#BtnMinus')
-	const BtnMult = document.querySelector('#BtnMult')
-	const BtnSplit = document.querySelector('#BtnSplit')
+	const BtnPlus = document.querySelector('#btnPlus')
+	const BtnMinus = document.querySelector('#btnMinus')
+	const BtnMult = document.querySelector('#btnMult')
+	const BtnSplit = document.querySelector('#btnSplit')
+	const BtnRel = document.querySelector('#btnRel')
 	const output = document.querySelector('#output')
 	document.querySelector('#num1').value = ''
 	document.querySelector('#num2').value = ''
@@ -33,6 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		const mult = values[0] * values[1]
 		output.innerHTML = `Ваш результат: <b>${mult}</b>`
 	}
+	
+	function toReload() {
+		document.querySelector('#num1').value = ''
+		document.querySelector('#num2').value = ''
+	}
 
 	function toSplit() {
 		const values = toInt()
@@ -40,10 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		output.innerHTML = `Ваш результат: <b>${split}</b>`
 	}
 
-	BtnPlus.addEventListener('click', toSum)
-	BtnMinus.addEventListener('click', toSub)
-	BtnMult.addEventListener('click', toMult)
-	BtnSplit.addEventListener('click', toSplit)
+	btnPlus.addEventListener('click', toSum)
+	btnMinus.addEventListener('click', toSub)
+	btnMult.addEventListener('click', toMult)
+	btnSplit.addEventListener('click', toSplit)
+	btnRel.addEventListener('click', toReload)
 
 
 })
