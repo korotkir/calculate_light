@@ -1,35 +1,52 @@
-// Добавляем событие, которое выполняеться после полной загрузки страницы
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1.Преобразование DOM-элеменов в переменные
-    const numOne = document.querySelector('#numOne')
-    const numTwo = document.querySelector('#numTwo')
-    const BtnPlus = document.querySelector('#BtnPlus')
-    const BtnMinus = document.querySelector('#BtnMinus')
-    const output = document.querySelector('#output')
+	const num1 = document.querySelector('#num1')
+	const num2 = document.querySelector('#num2')
+	const BtnPlus = document.querySelector('#BtnPlus')
+	const BtnMinus = document.querySelector('#BtnMinus')
+	const BtnMult = document.querySelector('#BtnMult')
+	const BtnSplit = document.querySelector('#BtnSplit')
+	const output = document.querySelector('#output')
 
-    // 2. Функция преобразования введенных данных из строки в число
-    function toInt() {
-        value1 = +numOne.value
-        value2 = +numTwo.value
-        return [value1, value2]
-    }
-    // 3. Функция обработчик сложения
-    function toSum() {
-        values = toInt()
-        result = values[0] + values[1]
-        output.textContent = `Результат: ${result}`
-    }
-    // 4. Функция обработчик вычитания
-    function toSub() {
-        values = toInt()
-        result = values[0] - values[1]
-        output.textContent = `Результат: ${result}`
-    }
-   
-    // 6. Назначение кнопок + и -
-    BtnPlus.addEventListener('click', toSum)
-    BtnMinus.addEventListener('click', toSub)
+	function toInt() {
+		value1 = Number(num1.value)
+		value2 = Number(num2.value)
+		return [value1, value2]
+	}
+
+	function toSum() {
+		const values = toInt()
+		const sum = values[0] + values[1]
+		output.innerHTML = `Ваш результат: <b>${sum}</b>`
+	}
+
+	function toSub() {
+		const values = toInt()
+		const sub = values[0] - values[1]
+		output.innerHTML = `Ваш результат: <b>${sub}</b>`
+	}
+
+	function toMult() {
+		const values = toInt()
+		const mult = values[0] * values[1]
+		output.innerHTML = `Ваш результат: <b>${mult}</b>`
+	}
+
+	function toSplit() {
+		const values = toInt()
+		const split = values[0] / values[1]
+		output.innerHTML = `Ваш результат: <b>${split}</b>`
+	}
+
+	BtnPlus.addEventListener('click', toSum)
+	BtnMinus.addEventListener('click', toSub)
+	BtnMult.addEventListener('click', toMult)
+	BtnSplit.addEventListener('click', toSplit)
 
 
 })
+
+
+
+
+
