@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	const BtnMult = document.querySelector('#BtnMult')
 	const BtnSplit = document.querySelector('#BtnSplit')
 	const output = document.querySelector('#output')
+	document.querySelector('#num1').value = ''
+	document.querySelector('#num2').value = ''
 
 	function toInt() {
 		value1 = Number(num1.value)
