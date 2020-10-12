@@ -35,16 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		output.innerHTML = `Ваш результат: <b>${mult}</b>`
 	}
 	
-	function toReload() {
-		return (document.querySelector('#num1').value = '')
-		return (document.querySelector('#num2').value = '')
-	}
-
 	function toSplit() {
 		const values = toInt()
 		const split = values[0] / values[1]
 		output.innerHTML = `Ваш результат: <b>${split}</b>`
 	}
+	
+	function toReload() {
+		return (document.querySelector('#num1').value = '')
+		return (document.querySelector('#num2').value = '')
+	}
+
 
 	btnPlus.addEventListener('click', toSum)
 	btnMinus.addEventListener('click', toSub)
