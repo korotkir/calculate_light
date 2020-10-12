@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const num1 = document.querySelector('#num1')
 	const num2 = document.querySelector('#num2')
-	const BtnPlus = document.querySelector('#btnPlus')
-	const BtnMinus = document.querySelector('#btnMinus')
-	const BtnMult = document.querySelector('#btnMult')
-	const BtnSplit = document.querySelector('#btnSplit')
-	const BtnRel = document.querySelector('#btnRel')
+	const btnPlus = document.querySelector('#btnPlus')
+	const btnMinus = document.querySelector('#btnMinus')
+	const btnMult = document.querySelector('#btnMult')
+	const btnSplit = document.querySelector('#btnSplit')
+	const btnRel = document.querySelector('#btnRel')
 	const output = document.querySelector('#output')
 	document.querySelector('#num1').value = ''
 	document.querySelector('#num2').value = ''
