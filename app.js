@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	
 	function toReload() {
-		return (document.querySelector('#num1').value = '')
-		return (document.querySelector('#num2').value = '')
+		document.querySelector('#num1').value = ''
+		document.querySelector('#num2').value = ''
 	}
 
 
